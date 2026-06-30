@@ -5,13 +5,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float bulletSpeed = 25.0f;
-    public float lifeTime = 5f;
+    public float lifeTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
-        Invoke("DestroySelf", 5.0f);
-        Destroy(gameObject, lifeTime);
+       Invoke("DestroySelf", 5.0f);
+       Destroy(gameObject, lifeTime);
     }
 
     // Update is called once per frame
@@ -26,8 +26,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-
-        DestroySelf();
+        if (collision.gameObject.tag == "Ground")
+        {
+            DestroySelf();
+        }
     }
     
     void DestroySelf()
