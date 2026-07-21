@@ -24,7 +24,7 @@ public class TriggerDoor : MonoBehaviour
     }
 
 
-    /*private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         // Automatically close the door when the player leaves the trigger area
         if (other.CompareTag("Player"))
@@ -32,5 +32,5 @@ public class TriggerDoor : MonoBehaviour
             Debug.Log("Close");
             _doorAnimator.SetTrigger("Closed");
         }
-    }*/
+    }
 }
