@@ -16,8 +16,11 @@ public class Enemyspawn : MonoBehaviour
     [Header("SpawnerController")]
     public float spawnTimeInterval = 1f;
     public float NumOfESpawned;
-    public float MaxNumOfE = 49f;
+    public float Wave1Enemys = 29;
+    public float Wave2Enemys = 49;
+    public float Wave3Enemys = 79;
     public bool SpawningEnabled = true;
+    private float MaxNumOfE;
     
     public Waves CurrentWave;
 
@@ -27,6 +30,7 @@ public class Enemyspawn : MonoBehaviour
     }
     private void Start()
     {
+        WaveHander();
         StartCoroutine(BasicEnemyLogic());
     }
 
@@ -65,7 +69,28 @@ public class Enemyspawn : MonoBehaviour
     {
         Wave1,
         Wave2,
-        wave3,
-        wave4
+        Wave3,
+        Wave4
+    }
+
+    public void WaveHander()
+    {
+        if(CurrentWave == Waves.Wave1)
+        {
+            MaxNumOfE = Wave1Enemys;
+            SpawningEnabled = true;
+        }
+
+        if (CurrentWave == Waves.Wave2)
+        {
+            MaxNumOfE = Wave2Enemys;
+            SpawningEnabled = true;
+        }
+
+        if (CurrentWave == Waves.Wave3)
+        {
+            MaxNumOfE = Wave3Enemys;
+            SpawningEnabled = true;
+        }
     }
 }
