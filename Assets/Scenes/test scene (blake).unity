@@ -266,7 +266,9 @@ MonoBehaviour:
   spawnRadiusZ: 51
   spawnTimeInterval: 0.5
   NumOfESpawned: 0
-  MaxNumOfE: 49
+  Wave1Enemys: 29
+  Wave2Enemys: 49
+  Wave3Enemys: 79
   SpawningEnabled: 1
   CurrentWave: 0
 --- !u!43 &1409941619
