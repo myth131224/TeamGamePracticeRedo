@@ -24,14 +24,12 @@ public class Enemyspawn : MonoBehaviour
     
     public Waves CurrentWave;
 
-    private void Awake()
-    {
-        StartCoroutine(RangedEnemyLogic());
-    }
+
     private void Start()
     {
-        WaveHander();
         StartCoroutine(BasicEnemyLogic());
+        WaveHander();
+        
     }
 
     private void Update()
@@ -49,7 +47,7 @@ public class Enemyspawn : MonoBehaviour
             NumOfESpawned++;
             if (SpawningEnabled)
             {
-                StartCoroutine(BasicEnemyLogic());
+            StartCoroutine(RangedEnemyLogic());
             }
     }
 
@@ -61,7 +59,7 @@ public class Enemyspawn : MonoBehaviour
         NumOfESpawned++;
         if (SpawningEnabled)
         {
-            StartCoroutine(RangedEnemyLogic());
+            StartCoroutine(BasicEnemyLogic());
         }
     }
 
