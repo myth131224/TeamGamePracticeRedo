@@ -270,7 +270,7 @@ MonoBehaviour:
   Wave2Enemys: 49
   Wave3Enemys: 79
   SpawningEnabled: 1
-  CurrentWave: 0
+  CurrentWave: 1
 --- !u!43 &1409941619
 Mesh:
   m_ObjectHideFlags: 0

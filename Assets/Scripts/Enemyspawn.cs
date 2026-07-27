@@ -27,12 +27,12 @@ public class Enemyspawn : MonoBehaviour
     private void Start()
     {
         StartCoroutine(BasicEnemyLogic());
-        WaveHander();
         
     }
 
     private void Update()
     {
+        WaveHander();
         if (NumOfESpawned >= MaxNumOfE)
         {
             SpawningEnabled = false;
