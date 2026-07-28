@@ -12,7 +12,7 @@ public class Enemyspawn : MonoBehaviour
     public float spawnRadiusX = 5f;
     public float spawnRadiusZ = 6f;
 
-    [Header("SpawnerController")]
+    [Header("Spawner Controller")]
     public float spawnTimeInterval = 1f;
     public float NumOfESpawned;
     public float Wave1Enemys = 29;
@@ -27,7 +27,7 @@ public class Enemyspawn : MonoBehaviour
     private void Start()
     {
         StartCoroutine(BasicEnemyLogic());
-        WaveHander();
+        
         
     }
 
@@ -37,6 +37,8 @@ public class Enemyspawn : MonoBehaviour
         {
             SpawningEnabled = false;
         }
+
+        WaveHander();
     }
     IEnumerator BasicEnemyLogic()
     {
@@ -46,7 +48,7 @@ public class Enemyspawn : MonoBehaviour
             NumOfESpawned++;
             if (SpawningEnabled)
             {
-            StartCoroutine(RangedEnemyLogic());
+                StartCoroutine(RangedEnemyLogic());
             }
     }
 
