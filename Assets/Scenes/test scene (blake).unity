@@ -1717,9 +1717,11 @@ GameObject:
   - component: {fileID: 3462470033690554527}
   - component: {fileID: 2316295711116775552}
   - component: {fileID: 834495559432061323}
+  - component: {fileID: 5820174186392172062}
   - component: {fileID: 4935776102440411996}
   - component: {fileID: 4213688590959857228}
   - component: {fileID: 5820174186392172061}
+  - component: {fileID: 5820174186392172063}
   m_Layer: 0
   m_Name: Player_Object
   m_TagString: Player
@@ -1993,6 +1995,40 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &5820174186392172062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095553361027237820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d969bbab51b43264f8a91854737f4c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHp: 100
+--- !u!65 &5820174186392172063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095553361027237820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6532522255415299989
 GameObject:
   m_ObjectHideFlags: 0
