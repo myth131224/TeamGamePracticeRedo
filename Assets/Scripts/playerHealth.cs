@@ -23,13 +23,7 @@ public class playerHealth : MonoBehaviour
    
     public void PlayerDamge()
     {
-        StartCoroutine(PlayerdamgeLogic());
-
-    }
-
-   public IEnumerator PlayerdamgeLogic()
-    {
-        yield return new WaitForSeconds(1f);
+        new WaitForSeconds(100f);
         PlayerHp--;
     }
 }

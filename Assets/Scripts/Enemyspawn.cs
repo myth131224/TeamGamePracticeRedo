@@ -33,12 +33,11 @@ public class Enemyspawn : MonoBehaviour
     private void Update()
     {
         WaveHander();
+
         if (NumOfESpawned >= MaxNumOfE)
         {
             SpawningEnabled = false;
         }
-
-        WaveHander();
     }
     IEnumerator BasicEnemyLogic()
     {
@@ -46,10 +45,14 @@ public class Enemyspawn : MonoBehaviour
             Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), 0f, Random.Range(-spawnRadiusZ, spawnRadiusZ));
             Instantiate(BasicEnemy, randomSpawnPoint, Quaternion.identity);
             NumOfESpawned++;
-            if (SpawningEnabled)
-            {
-                StartCoroutine(RangedEnemyLogic());
-            }
+        if (SpawningEnabled && CurrentWave >= Waves.Wave2)
+        {
+            StartCoroutine(RangedEnemyLogic());
+        }
+        else
+        {
+            StartCoroutine(BasicEnemyLogic());
+        }
     }
 
     IEnumerator RangedEnemyLogic()
@@ -76,6 +79,7 @@ public class Enemyspawn : MonoBehaviour
     {
         if(CurrentWave == Waves.Wave1)
         {
+            
             MaxNumOfE = Wave1Enemys;
             SpawningEnabled = true;
         }
