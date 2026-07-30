@@ -266,7 +266,7 @@ MonoBehaviour:
   spawnRadiusZ: 51
   spawnTimeInterval: 0.5
   NumOfESpawned: 0
-  Wave1Enemys: 1
+  Wave1Enemys: 29
   Wave2Enemys: 49
   Wave3Enemys: 79
   SpawningEnabled: 1
@@ -2008,6 +2008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHp: 100
+  MaxPlayerHP: 100
 --- !u!65 &5820174186392172063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2027,8 +2028,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.058753, y: 2, z: 2.997734}
+  m_Center: {x: -0.11903334, y: 0, z: 0.10280037}
 --- !u!1 &6532522255415299989
 GameObject:
   m_ObjectHideFlags: 0

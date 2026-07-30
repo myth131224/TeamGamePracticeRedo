@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6375966245123935448}
   - component: {fileID: 750605618868977529}
   - component: {fileID: 6356981257717811094}
+  - component: {fileID: 69278835528705354}
+  - component: {fileID: 211759044560732634}
   m_Layer: 0
   m_Name: Job
   m_TagString: Untagged
@@ -137,6 +139,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   playerTargetInfo: {fileID: 0}
+--- !u!114 &69278835528705354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053717991165704663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76c37c78a543c842a02f07619b5358c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  playerTargetInfo: {fileID: 0}
+  damage: 10
+--- !u!65 &211759044560732634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053717991165704663}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.866693, y: 6.2999997, z: 8.617663}
+  m_Center: {x: 0.08519048, y: 0, z: -0.063040055}
 --- !u!1 &9123503495599972112
 GameObject:
   m_ObjectHideFlags: 0

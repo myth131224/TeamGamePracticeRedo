@@ -4,26 +4,21 @@ using UnityEngine;
 
 public class playerHealth : MonoBehaviour
 {
-    public float PlayerHp = 100f;
+    public float PlayerHp;
+    public float MaxPlayerHP = 100f;
 
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (PlayerHp >= 0)
-        {
-
-        }
+        PlayerHp = MaxPlayerHP;
     }
    
-    public void PlayerDamge()
+    public void PlayerDamge(float amount)
     {
-        new WaitForSeconds(100f);
-        PlayerHp--;
+        PlayerHp -= amount;
+        if(PlayerHp <= 0)
+        {
+            Time.timeScale = 0f;
+        }
     }
 }
