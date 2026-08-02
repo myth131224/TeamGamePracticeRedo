@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class enenmyAttack : MonoBehaviour
 {
-    public playerHealth playerHealth;
-    public float damage = 10;
+    public playerHealth PlayerHealth;
+    public float damage = 10f;
+
 
     private void OnCollisionEnter(Collision Player)
     {
         if (Player.gameObject.tag == "Player")
         {
-            playerHealth.PlayerDamge(damage);
+            PlayerHealth.PlayerDamge(10f);
         }
     }
 
