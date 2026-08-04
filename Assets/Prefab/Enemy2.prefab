@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 750605618868977529}
   - component: {fileID: 6356981257717811094}
   - component: {fileID: 69278835528705354}
+  - component: {fileID: 8979160136910954810}
   - component: {fileID: 211759044560732634}
   m_Layer: 0
   m_Name: Job
@@ -151,9 +152,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76c37c78a543c842a02f07619b5358c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  playerTargetInfo: {fileID: 0}
+  playerHealth: {fileID: 0}
   damage: 10
+--- !u!114 &8979160136910954810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053717991165704663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edb8c672fa9e474aa46a192e142d486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHp: 0
+  MaxEnemyHP: 100
 --- !u!65 &211759044560732634
 BoxCollider:
   m_ObjectHideFlags: 0

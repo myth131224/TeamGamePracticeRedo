@@ -8,12 +8,12 @@ public class enenmyAttack : MonoBehaviour
     public playerHealth playerHealth;
     public float damage = 10;
 
-    private void OnCollisionEnter(Collision Player)
+    /*private void OnCollisionEnter(Collision Player)
     {
         if (Player.gameObject.tag == "Player")
         {
             playerHealth.PlayerDamge(damage);
         }
     }
-
+    */
 }

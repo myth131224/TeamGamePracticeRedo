@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 4616076260720097584}
   - component: {fileID: 3331283425817580939}
   - component: {fileID: 501221744375568210}
+  - component: {fileID: 7864974140835620238}
   - component: {fileID: 5402840565681301298}
   - component: {fileID: 8433765352672938968}
   m_Layer: 0
@@ -171,6 +172,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 6724288887727587817, guid: 8bbf00fe797cc164d86693e843cf11ca, type: 3}
   playerTargetInfo: {fileID: 0}
+--- !u!114 &7864974140835620238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274580431661436585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edb8c672fa9e474aa46a192e142d486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHp: 0
+  MaxEnemyHP: 100
 --- !u!65 &5402840565681301298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -204,6 +219,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76c37c78a543c842a02f07619b5358c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  playerTargetInfo: {fileID: 0}
+  playerHealth: {fileID: 0}
   damage: 10
