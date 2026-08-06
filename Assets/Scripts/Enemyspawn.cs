@@ -11,6 +11,7 @@ public class Enemyspawn : MonoBehaviour
     [Header("Spawn Var")]
     public float spawnRadiusX = 5f;
     public float spawnRadiusZ = 6f;
+    public float spwanRadiusY = 10f;
 
     [Header("Spawner Controller")]
     public float spawnTimeInterval = 1f;
@@ -42,7 +43,7 @@ public class Enemyspawn : MonoBehaviour
     IEnumerator BasicEnemyLogic()
     {
             yield return new WaitForSeconds(spawnTimeInterval);
-            Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), 0f, Random.Range(-spawnRadiusZ, spawnRadiusZ));
+            Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), spwanRadiusY, Random.Range(-spawnRadiusZ, spawnRadiusZ));
             Instantiate(BasicEnemy, randomSpawnPoint, Quaternion.identity);
             NumOfESpawned++;
         if (SpawningEnabled)
@@ -55,7 +56,7 @@ public class Enemyspawn : MonoBehaviour
     IEnumerator RangedEnemyLogic()
     {
         yield return new WaitForSeconds(spawnTimeInterval);
-        Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), 0f, Random.Range(-spawnRadiusZ, spawnRadiusZ));
+        Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), spwanRadiusY, Random.Range(-spawnRadiusZ, spawnRadiusZ));
         Instantiate(RangedEnemy, randomSpawnPoint, Quaternion.identity);
         NumOfESpawned++;
         if (SpawningEnabled)
