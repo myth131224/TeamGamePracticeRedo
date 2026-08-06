@@ -3,22 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Ground
-  - Stone
-  - InteractSHOTGUN
-  - InteractRIFLE
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Enemy
+  - 
   - Water
   - UI
-  - Ground
-  - InteractRIFLE
-  - InteractSHOTGUN
+  - 
+  - 
+  - 
   - 
   - 
   - 
