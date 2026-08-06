@@ -45,14 +45,11 @@ public class Enemyspawn : MonoBehaviour
             Vector3 randomSpawnPoint = new Vector3(Random.Range(-spawnRadiusX, spawnRadiusX), 0f, Random.Range(-spawnRadiusZ, spawnRadiusZ));
             Instantiate(BasicEnemy, randomSpawnPoint, Quaternion.identity);
             NumOfESpawned++;
-        if (SpawningEnabled && CurrentWave >= Waves.Wave2)
+        if (SpawningEnabled)
         {
             StartCoroutine(RangedEnemyLogic());
         }
-        else
-        {
-            StartCoroutine(BasicEnemyLogic());
-        }
+        
     }
 
     IEnumerator RangedEnemyLogic()
